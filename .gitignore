@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### DB###
+resBoot.db
+resBoot.mv.db
+resBoot.trace.db
+db1.mv.db
+

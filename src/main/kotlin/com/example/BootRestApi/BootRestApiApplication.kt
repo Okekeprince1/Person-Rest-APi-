@@ -1,5 +1,6 @@
 package com.example.BootRestApi
 
+import com.example.BootRestApi.domain.Person
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.web.bind.annotation.GetMapping
@@ -10,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController
 class BootRestApiApplication{
 
 	@GetMapping
-	fun start(): String{
-		return "RestApi is starting at port 4000"
+	fun start(): Person{
+		return Person(lastName = "Okeke")
 	}
 }
 
